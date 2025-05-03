@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Мужской смотровой кабинет</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(120deg, #8ec5fc 0%, #e0c3fc 100%);
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      border-radius: 0 0 30px 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #222;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin: 0.3rem 0;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      margin-top: 1rem;
+      background: linear-gradient(45deg, #25D366, #128C7E);
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+
+    .whatsapp-button:hover {
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .glass-section {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      color: #222;
+    }
+
+    .glass-section.alt {
+      background: linear-gradient(to right top, #ffffffcc, #e0f7ffcc);
+    }
+
+    .glass-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    .glass-section p, .glass-section li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .glass-section ul {
+      padding-left: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+      color: #444;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .glass-section {
+        padding: 1.5rem 1rem;
+      }
+
+      .glass-section h2 {
+        font-size: 1.3rem;
+      }
+
+      .glass-section p, .glass-section li {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9fXqP8WuOPH7K43cE7fJ76cvIQzKMG6DoA&s" alt="Логотип">
+    <h1>Каргалинская городская больница</h1>
+    <p>ул. Кургулова 19Б, г. Актобе</p>
+    <p><strong>Мужской смотровой кабинет</strong></p>
+    <p>🕒 Время работы: с 08:30 до 16:30</p>
+    <a href="https://wa.me/77477979924" class="whatsapp-button">Написать в WhatsApp</a>
+  </header>
+
+  <main>
+    <section class="glass-section">
+      <h2>Мы заботимся о вашем здоровье</h2>
+      <p>
+        Мужской смотровой кабинет — это ваша первая линия обороны против серьезных заболеваний.
+        Раннее выявление — ключ к эффективному лечению. Мы здесь, чтобы вы были уверены в своем здоровье.
+      </p>
+    </section>
+
+    <section class="glass-section alt">
+      <h2>Что вас ждет на приеме</h2>
+      <ul>
+        <li>Осмотр кожи на наличие пигментных пятен и образований</li>
+        <li>Оценка состояния ротовой полости и лимфоузлов</li>
+        <li>Проверка щитовидной и молочной желез</li>
+        <li>Осмотр половых органов и прямой кишки</li>
+      </ul>
+      <p>Цель — вовремя выявить любые изменения и направить вас к нужному специалисту.</p>
+    </section>
+
+    <section class="glass-section">
+      <h2>Почему важно прийти</h2>
+      <p>
+        Мужские заболевания могут протекать бессимптомно. Часто мужчины приходят уже тогда, когда болезнь зашла далеко. 
+        Мы призываем: не откладывайте! Профилактика — лучший путь сохранить здоровье и качество жизни.
+      </p>
+    </section>
+
+    <section class="glass-section alt">
+      <h2>Контакты</h2>
+      <p>📍 2 этаж, кабинет 210</p>
+      <p>🕒 Работаем с 08:30 до 16:30 (в штатном режиме)</p>
+      <p>👨‍⚕️ Фельдшер Абдолхамит К.</p>
+      <p>📞 +7 747 797 99 24<br>📞 +7 706 428 05 42</p>
+      <a href="https://wa.me/77477979924" class="whatsapp-button">Написать в WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Каргалинская ГБ — Все права защищены
+  </footer>
+
+</body>
+</html>
