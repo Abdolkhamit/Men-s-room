@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #8ec5fc 0%, #e0c3fc 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+  }
+
+  header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid rgba(0,0,0,0.1);
+  }
+
+  header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222;
+  }
+
+  header p {
+    font-size: 1rem;
+    margin: 0.3rem 0;
+  }
+
+  .whatsapp-button {
+    display: inline-block;
+    margin-top: 1rem;
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+
+  .whatsapp-button:hover {
+    transform: scale(1.05);
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .glass-section {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    color: #222;
+  }
+
+  .glass-section.alt {
+    background: linear-gradient(to right top, #ffffffcc, #e0f7ffcc);
+  }
+
+  .glass-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #111;
+  }
+
+  .glass-section p, .glass-section li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .glass-section ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    color: #444;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+  .language-switcher {
+position: absolute;
+top: 20px;
+right: 20px;
+background: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(10px);
+border-radius: 12px;
+padding: 6px 12px;
+display: flex;
+gap: 10px;
+z-index: 10;
+}
+
+.language-switcher a {
+color: #000000;
+font-weight: bold;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.language-switcher a:hover {
+color: #00ffcc;
+}
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    .glass-section {
+      padding: 1.5rem 1rem;
+    }
+
+    .glass-section h2 {
+      font-size: 1.3rem;
+    }
+
+    .glass-section p, .glass-section li {
+      font-size: 0.95rem;
+    }
+  }
