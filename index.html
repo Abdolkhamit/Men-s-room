@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Мужской смотровой кабинет</title>
+  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q9HC1T8649"></script>
@@ -14,148 +15,27 @@
 
   gtag('config', 'G-Q9HC1T8649');
 </script>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Rubik', sans-serif;
-    }
 
-    body {
-      min-height: 100vh;
-      background: linear-gradient(120deg, #8ec5fc 0%, #e0c3fc 100%);
-      background-size: cover;
-      background-attachment: fixed;
-      color: #333;
-    }
-
-    header {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 2rem 1rem;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
-      border-radius: 0 0 30px 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    header img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
-      border: 3px solid rgba(0,0,0,0.1);
-    }
-
-    header h1 {
-      font-size: 2rem;
-      font-weight: 600;
-      color: #222;
-    }
-
-    header p {
-      font-size: 1rem;
-      margin: 0.3rem 0;
-    }
-
-    .whatsapp-button {
-      display: inline-block;
-      margin-top: 1rem;
-      background: linear-gradient(45deg, #25D366, #128C7E);
-      color: white;
-      padding: 0.7rem 1.2rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease;
-    }
-
-    .whatsapp-button:hover {
-      transform: scale(1.05);
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-
-    .glass-section {
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 20px;
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      color: #222;
-    }
-
-    .glass-section.alt {
-      background: linear-gradient(to right top, #ffffffcc, #e0f7ffcc);
-    }
-
-    .glass-section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 1rem;
-      color: #111;
-    }
-
-    .glass-section p, .glass-section li {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    .glass-section ul {
-      padding-left: 1.2rem;
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1.5rem 1rem;
-      background: rgba(255, 255, 255, 0.4);
-      backdrop-filter: blur(10px);
-      color: #444;
-      font-size: 0.9rem;
-      border-top: 1px solid rgba(0,0,0,0.1);
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-
-      .glass-section {
-        padding: 1.5rem 1rem;
-      }
-
-      .glass-section h2 {
-        font-size: 1.3rem;
-      }
-
-      .glass-section p, .glass-section li {
-        font-size: 0.95rem;
-      }
-    }
-  </style>
 </head>
 <body>
 
   <header>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP9fXqP8WuOPH7K43cE7fJ76cvIQzKMG6DoA&s" alt="Логотип">
-    <h1>Мужской смотровой кабинет</h1>
-    <p>ул. Кургулова 19Б, г. Актобе</p>
-    <p><strong>Каргалинская городская больница</strong></p>
-    <p>🕒 Время работы: с 08:30 до 16:30</p>
-    <a href="https://wa.me/77477979924" class="whatsapp-button">Написать в WhatsApp</a>
+    <div class="container">
+        <img src="/logo.png" alt="Логотип" class="logo" />
+        <div class="header-text">
+          <h1>Мужской смотровой кабинет</h1>
+          <p>ул. Кургулова 19Б, Актобе</p>
+          <h2>Каргалинская городская больница</h2>
+          <p>Время работы: 08:30 – 16:30</p>
+          <a href="https://wa.me/77477979924" class="whatsapp-button">Написать в WhatsApp</a>
+        </div>
+        <div class="language-switcher">
+          <a href="index.html">Рус</a>
+          <a href="kz.html">Қаз</a>
+        </div>
+      </div>
   </header>
+
 
   <main>
     <section class="glass-section">
