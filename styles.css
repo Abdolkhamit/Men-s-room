@@ -2,203 +2,202 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
 }
 
+/* БАЗА */
 body {
-  min-height: 100vh;
-  background: linear-gradient(120deg, #8ec5fc 0%, #e0c3fc 100%);
-  background-size: cover;
-  background-attachment: fixed;
-  color: #333;
-}
-
-/* Шапка */
-header {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 2rem 1rem;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
-  border-radius: 0 0 30px 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-header img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  border: 3px solid rgba(0,0,0,0.1);
-}
-
-header h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #222;
-}
-
-header p {
-  font-size: 1rem;
-  margin: 0.3rem 0;
-}
-
-/* Кнопка WhatsApp */
-.whatsapp-button {
-  display: inline-block;
-  margin-top: 1rem;
-  background: linear-gradient(45deg, #25D366, #128C7E);
-  color: white;
-  padding: 0.7rem 1.2rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: transform 0.2s ease;
-}
-
-.whatsapp-button:hover {
-  transform: scale(1.05);
-}
-
-/* Основной контейнер */
-main {
-  max-width: 1000px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-/* Глассморфные секции */
-.glass-section,
-.faq-section,
-.contact-section {
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 20px;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  color: #222;
-}
-
-.glass-section.alt {
-  background: linear-gradient(to right top, #ffffffcc, #e0f7ffcc);
-}
-
-.glass-section h2,
-.faq-section h2,
-.contact-section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  color: #111;
-  text-align: center;
-}
-
-.glass-section p,
-.glass-section li,
-.contact-section p,
-.faq-item p {
-  font-size: 1rem;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #f4f7fb;
+  color: #2c3e50;
   line-height: 1.6;
 }
 
-.glass-section ul {
-  padding-left: 1.2rem;
-  margin-bottom: 1rem;
+/* HEADER */
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #e3e8ee;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ЛЕВАЯ ЧАСТЬ */
+.logo {
+  width: 44px;
+  height: 44px;
+}
+
+.header-text {
+  margin-left: 12px;
+}
+
+.header-text h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e7f6d;
+  margin-bottom: 2px;
+}
+
+.header-text h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.header-text p {
+  font-size: 13px;
+  color: #6c7a89;
+}
+
+/* ПРАВАЯ ЧАСТЬ */
+.whatsapp-button {
+  background: #1e7f6d;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.language-switcher {
+  margin-top: 6px;
+}
+
+.language-switcher a {
+  font-size: 12px;
+  color: #1e7f6d;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+/* MAIN */
+main {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+
+/* КАРТОЧКИ */
+.card {
+  background: #ffffff;
+  border: 1px solid #e3e8ee;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+}
+
+/* ЗАГОЛОВКИ */
+.card h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e7f6d;
+  margin-bottom: 10px;
+
+  border-left: 4px solid #1e7f6d;
+  padding-left: 10px;
+}
+
+/* ТЕКСТ */
+.card p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #4a5a6a;
+}
+
+.card ul {
+  padding-left: 18px;
+  margin-bottom: 8px;
+}
+
+.card li {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* МИССИЯ */
+.mission {
+  background: #f0f7f5;
 }
 
 /* FAQ */
 .faq-item {
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 16px;
-  padding: 1rem 1.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  border: 1px solid #e3e8ee;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #fafcff;
 }
 
 .faq-item summary {
-  font-size: 1.1rem;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  color: #333;
 }
 
-.faq-item summary::-webkit-details-marker {
-  display: none;
+.faq-item p {
+  margin-top: 6px;
+  font-size: 13px;
 }
 
-/* Контакты */
-.contact-section p {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-
-/* Футер */
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 1.5rem 1rem;
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(10px);
-  color: #444;
-  font-size: 0.9rem;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  padding: 14px;
+  font-size: 12px;
+  color: #7b8a97;
+  border-top: 1px solid #e3e8ee;
+  background: #ffffff;
 }
 
-/* Переключатель языка */
-.language-switcher {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 12px;
-  padding: 6px 12px;
-  display: flex;
-  gap: 10px;
-  z-index: 10;
-}
-
-.language-switcher a {
-  color: #000000;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.language-switcher a:hover {
-  color: #00ffcc;
-}
-
-/* Мобильная адаптация */
+/* 📱 МОБИЛКА */
 @media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5rem;
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
-  .glass-section,
-  .faq-section,
-  .contact-section {
-    padding: 1.5rem 1rem;
+  .header-text h1 {
+    font-size: 16px;
   }
 
-  .glass-section h2,
-  .faq-section h2,
-  .contact-section h2 {
-    font-size: 1.3rem;
+  .header-text h2 {
+    font-size: 13px;
   }
 
-  .glass-section p,
-  .glass-section li,
-  .contact-section p {
-    font-size: 0.95rem;
+  .header-text p {
+    font-size: 12px;
+  }
+
+  .whatsapp-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  main {
+    padding: 0 12px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .card h2 {
+    font-size: 15px;
+  }
+
+  .card p,
+  .card li {
+    font-size: 13px;
   }
 }
